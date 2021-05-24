@@ -12,7 +12,7 @@
 
 * doGet 함수만 작성해서 확인해봄 (확인 : http://localhost:8080/helloweb/hello)
 
-<img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/272d82b7-9388-4964-9e01-99676e4f087d/Untitled.png" width="50%"/>
+<img src="https://user-images.githubusercontent.com/52481037/119318487-59b37380-bcb4-11eb-9ea3-031d4e13f32e.png" width="50%"/>
 
 * IOC (Inversion of Control Container)
     * 객체에 대한 제어권 역전됨
