@@ -10,6 +10,14 @@
 
 ### 1-2. HelloServlet
 
+* doGet 함수만 작성해서 확인해봄 (확인 : http://localhost:8080/helloweb/hello)
+
+<img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/272d82b7-9388-4964-9e01-99676e4f087d/Untitled.png" width="50%"/>
+
+* IOC (Inversion of Control Container)
+    * 객체에 대한 제어권 역전됨
+    * HelloServlet class 만드는 것만 하면 됨. 호출은 내가 안하고  tomcat - container가 함
+
 
 ### 1-3. JSP / HTML
 
