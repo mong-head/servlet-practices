@@ -27,14 +27,21 @@
 				```
 				
 			* post method
+				* foam.jsp
+				``` jsp
+				<form action='/helloweb/join.jsp' method="get"> <!-- method는 post등등 가능 -->
+					email : <input type='text' name='email' value='' />
+					<input type='submit' value='sign up' />
+				</form>
+				```
 		* data 받기
 			```jsp
 			<%
-			// 구문 들어갈 수 있음
-			String name = request.getParameter("name");
+				// 구문 들어갈 수 있음
+				String name = request.getParameter("name");
 			%>
 			...
 			<body>
-			<h1>hello? <%=name %></h1>
+				<h1>hello? <%=name %></h1>
 			</body>
 			```
