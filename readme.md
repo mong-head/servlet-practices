@@ -97,6 +97,16 @@
 
 * pom에 mariadb driver 넣기
 
+<img src="https://user-images.githubusercontent.com/52481037/119461535-c133f680-bd7a-11eb-9d14-6a745dbe553a.png" width="60%">
+
+* redirect
+	* insert/delete/update 인 경우, HTML response 보내지 않음
+		* HTML response하는 경우, 새로고침하는 경우 해당 sql이 다시 수행됨
+		* 같은 것이 여러개 추가되거나, 에러가 남
+	* redirect : 다른 페이지로 이동
+	* add.jsp는 redirect하라는 요청을 날리게 됨 ( WAS내부에서 add.jsp에서 바로 index.jsp로 가는 것이 아님)
+
+
 ## 3. guestbook01
 
 |index.jsp|데이터 넣기|데이터 삭제:비번틀림|데이터 삭제:비번틀리지 않음|
