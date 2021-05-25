@@ -2,11 +2,48 @@
 
 * tomcat & eclipse 연동
 
+## 목차
+[1. helloweb](##1-helloweb)
+[2. emaillist01](##2-emaillist01)
+
 ## 1. helloweb
 
 ### 1-1. web.xml
 
 * deployment description
+
+* web.xml
+	* java.sun.com -> JAVA.sum.com
+
+	```xml
+	<?xml version="1.0" encoding="UTF-8"?>
+	<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns="http://JAVA.sun.com/xml/ns/javaee" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" 
+	version="2.5">
+	  <display-name>helloweb</display-name>
+	
+	  <welcome-file-list>
+	    <welcome-file>index.html</welcome-file>
+		<welcome-file>index.jsp</welcome-file>	
+	    <welcome-file>index.htm</welcome-file>
+	    <welcome-file>default.html</welcome-file>
+	    <welcome-file>default.htm</welcome-file>
+	    <welcome-file>default.jsp</welcome-file>
+	  </welcome-file-list>
+	
+	  <servlet>
+	    <description></description>
+	    <display-name>HelloServlet</display-name>
+	    <servlet-name>HelloServlet</servlet-name>
+	    <servlet-class>com.douzone.helloweb.controller.HelloServlet</servlet-class>
+	  </servlet>
+	  <servlet-mapping>
+	    <servlet-name>HelloServlet</servlet-name>
+	    <url-pattern>/hello</url-pattern>
+	  </servlet-mapping>
+	</web-app>
+	```
 
 ### 1-2. HelloServlet
 
@@ -53,3 +90,7 @@
 				<h1>hello? <%=name %></h1>
 			</body>
 			```
+## 2. emaillist01
+
+* pom에 mariadb driver 넣기
+
