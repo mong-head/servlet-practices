@@ -108,6 +108,9 @@
 	* redirect : 다른 페이지로 이동
 	* add.jsp는 redirect하라는 요청을 날리게 됨 ( WAS내부에서 add.jsp에서 바로 index.jsp로 가는 것이 아님)
 
+* rendering
+	* HTML + data(vo)
+
 * result
 
 	|index.jsp|form.jsp|
