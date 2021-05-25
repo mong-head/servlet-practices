@@ -4,7 +4,10 @@
 
 ## 목차
 [1. helloweb](##1-helloweb)
+
 [2. emaillist01](##2-emaillist01)
+
+[3. guestbook01](##3-guestbook01)
 
 ## 1. helloweb
 
@@ -93,4 +96,10 @@
 ## 2. emaillist01
 
 * pom에 mariadb driver 넣기
+
+## 3. guestbook01
+
+|index.jsp|데이터 넣기|데이터 삭제:비번틀림|데이터 삭제:비번틀리지 않음|
+|---|---|---|---|
+|![K-030](https://user-images.githubusercontent.com/52481037/119452719-a0b36e80-bd71-11eb-909b-121945209903.jpg)|![K-031](https://user-images.githubusercontent.com/52481037/119453410-5e3e6180-bd72-11eb-925f-5735c5028b01.jpg)|![K-032](https://user-images.githubusercontent.com/52481037/119453462-6b5b5080-bd72-11eb-9c2c-8c6d85edf492.jpg)|![K-033](https://user-images.githubusercontent.com/52481037/119453546-7f9f4d80-bd72-11eb-8a16-a32886c0fdcb.jpg)|
 
