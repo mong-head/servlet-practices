@@ -169,4 +169,51 @@ public class GuestbookDao {
 		}
 		return result;
 	}
+	public String findPassword(GuestbookVo vo) {
+		String result = null;
+		
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		try {
+			// 1,2 : driver loading, connection
+			conn = getConnection();
+			
+			// 3. prepare sql statement
+			String sql = "select password"
+					+ " from guestbook"
+					+ " where no = ?";
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setLong(1, vo.getNo());
+			
+			// 4. SQL실행 
+			rs = pstmt.executeQuery();
+			
+			// 6. result 가져오기
+			while(rs.next() /*각각의 행 가지고 오기*/) {
+				result = rs.getString(1);
+			}
+			
+		} catch (SQLException e) {
+			// 2. 관련 : linux 꺼져있을 때 등등 connection안될 때 
+			System.out.println("error :"+e);
+		} finally {
+			//clean-up; 자원정리는 만들어진 순서 거꾸로 하기
+			try {
+				if(rs != null) {
+					rs.close();
+				}
+				if(pstmt != null) {
+					pstmt.close();
+				}
+				if(conn != null) {
+					conn.close();					
+				}
+				
+			} catch (SQLException e) {
+				System.out.println("connection close error:"+e);
+			}
+		}
+		return result;
+	}
 }

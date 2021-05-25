@@ -5,6 +5,10 @@
     pageEncoding="UTF-8"%>
 <%
 	List<GuestbookVo> list = new GuestbookDao().findAll();
+	String alert = request.getParameter("alert");
+	if("true".equals(alert)){
+		out.println("<script>alert('비번 틀림!');</script>");
+	}
 %>
 <html>
 <head>

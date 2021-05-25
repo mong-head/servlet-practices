@@ -1,3 +1,4 @@
+
 <%@page import="com.douzone.guestbook01.dao.GuestbookDao"%>
 <%@page import="com.douzone.guestbook01.vo.GuestbookVo"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
@@ -11,7 +12,12 @@
 	vo.setNo(no);
 	vo.setPassword(password);
 	
+	String real_password = new GuestbookDao().findPassword(vo);
 	new GuestbookDao().delete(vo);
-	
-	response.sendRedirect(request.getContextPath());
+	if(password.equals(real_password)){
+		response.sendRedirect(request.getContextPath());
+	}
+	else{
+		response.sendRedirect(request.getContextPath()+"/index.jsp?alert=true");			
+	}
 %>
