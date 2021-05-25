@@ -97,7 +97,9 @@
 
 * pom에 mariadb driver 넣기
 
-<img src="https://user-images.githubusercontent.com/52481037/119461535-c133f680-bd7a-11eb-9d14-6a745dbe553a.png" width="60%">
+* model 1
+
+	<img src="https://user-images.githubusercontent.com/52481037/119461535-c133f680-bd7a-11eb-9d14-6a745dbe553a.png" width="60%">
 
 * redirect
 	* insert/delete/update 인 경우, HTML response 보내지 않음
@@ -105,6 +107,12 @@
 		* 같은 것이 여러개 추가되거나, 에러가 남
 	* redirect : 다른 페이지로 이동
 	* add.jsp는 redirect하라는 요청을 날리게 됨 ( WAS내부에서 add.jsp에서 바로 index.jsp로 가는 것이 아님)
+
+* result
+
+	|index.jsp|form.jsp|
+	|---|---|
+	|<img src="https://user-images.githubusercontent.com/52481037/119463052-54b9f700-bd7c-11eb-9b1e-1eada888ff55.jpg" width="40%"/>|<img src="https://user-images.githubusercontent.com/52481037/119463085-5d123200-bd7c-11eb-8855-bf9b39acb199.jpg" width="60%"/>|
 
 
 ## 3. guestbook01
