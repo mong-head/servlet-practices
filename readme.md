@@ -120,6 +120,10 @@
 
 ## 3. guestbook01
 
+|model 1|database|
+|:---:|:---:|
+|<img src="https://user-images.githubusercontent.com/52481037/119465910-16720700-bd7f-11eb-85f9-c264c96b10e8.png" width="60%"/>|![K-037](https://user-images.githubusercontent.com/52481037/119466534-ab750000-bd7f-11eb-8965-9971940317a6.jpg)|
+
 * result
 
 	|index.jsp|데이터 넣기|데이터 삭제:비번틀림|데이터 삭제:비번틀리지 않음|
