@@ -9,6 +9,30 @@
 
 [3. guestbook01](#3-guestbook01)
 
+
+## 0. database and result
+
+### 0-1. database
+
+|emaillist|guestbook|
+|:---:|:---:|
+|<img src="https://user-images.githubusercontent.com/52481037/119463795-0fe29000-bd7d-11eb-8ca2-23b385ffe1f1.jpg" width="100%">|![K-037](https://user-images.githubusercontent.com/52481037/119466534-ab750000-bd7f-11eb-8965-9971940317a6.jpg)|
+
+### 0-2. result
+
+#### 1) emaillist
+
+	|index.jsp|form.jsp|
+	|:---:|:---:|
+	|<img src="https://user-images.githubusercontent.com/52481037/119463052-54b9f700-bd7c-11eb-9b1e-1eada888ff55.jpg" width="40%"/>|<img src="https://user-images.githubusercontent.com/52481037/119463085-5d123200-bd7c-11eb-8855-bf9b39acb199.jpg" width="60%"/>|
+
+#### 2) guestbook
+
+	|index.jsp|데이터 넣기|데이터 삭제:비번틀림|데이터 삭제:비번틀리지 않음|
+	|:---:|:---:|:---:|:---:|
+	|![K-030](https://user-images.githubusercontent.com/52481037/119452719-a0b36e80-bd71-11eb-909b-121945209903.jpg)|![K-031](https://user-images.githubusercontent.com/52481037/119453410-5e3e6180-bd72-11eb-925f-5735c5028b01.jpg)|![K-032](https://user-images.githubusercontent.com/52481037/119453462-6b5b5080-bd72-11eb-9c2c-8c6d85edf492.jpg)|![K-033](https://user-images.githubusercontent.com/52481037/119453546-7f9f4d80-bd72-11eb-8a16-a32886c0fdcb.jpg)|
+
+
 ## 1. helloweb
 
 ### 1-1. web.xml
@@ -97,9 +121,26 @@
 
 * pom에 mariadb driver 넣기
 
-	|model1|database|
-	|:-----:|:-----:|
-	|<img src="https://user-images.githubusercontent.com/52481037/119461535-c133f680-bd7a-11eb-9d14-6a745dbe553a.png" width="60%">|<img src="https://user-images.githubusercontent.com/52481037/119463795-0fe29000-bd7d-11eb-8ca2-23b385ffe1f1.jpg" width="100%">|
+* directory
+
+	```text
+	src/main/java
+		com.douzone.emaillist.dao
+					| --- EmaillistDao
+		com.douzone.emaillist.vo
+					| --- EmaillistVo
+	
+	webapp
+					| --- WEB-INF
+									| --- web.xml
+					| --- index.jsp
+					| --- form.jsp
+					| --- add.jsp
+	```
+
+* model1
+
+	<img src="https://user-images.githubusercontent.com/52481037/119461535-c133f680-bd7a-11eb-9d14-6a745dbe553a.png" width="60%">
 
 * redirect
 	* insert/delete/update 인 경우, HTML response 보내지 않음
@@ -111,22 +152,79 @@
 * rendering
 	* HTML + data(vo)
 
-* result
-
-	|index.jsp|form.jsp|
-	|:---:|:---:|
-	|<img src="https://user-images.githubusercontent.com/52481037/119463052-54b9f700-bd7c-11eb-9b1e-1eada888ff55.jpg" width="40%"/>|<img src="https://user-images.githubusercontent.com/52481037/119463085-5d123200-bd7c-11eb-8855-bf9b39acb199.jpg" width="60%"/>|
-
 
 ## 3. guestbook01
 
-|model 1|database|
-|:---:|:---:|
-|<img src="https://user-images.githubusercontent.com/52481037/119465910-16720700-bd7f-11eb-85f9-c264c96b10e8.png" width="60%"/>|![K-037](https://user-images.githubusercontent.com/52481037/119466534-ab750000-bd7f-11eb-8965-9971940317a6.jpg)|
+* directory
 
-* result
+	```text
+	src/main/java
+		com.douzone.guestbook.dao
+					| --- GuestbookDao
+		com.douzone.guestbook.vo
+					| --- GuestbookVo
+	
+	webapp
+					| --- WEB-INF
+									| --- web.xml
+					| --- index.jsp
+					| --- deleteform.jsp
+					| --- delete.jsp
+					| --- add.jsp
+	```
 
-	|index.jsp|데이터 넣기|데이터 삭제:비번틀림|데이터 삭제:비번틀리지 않음|
-	|:---:|:---:|:---:|:---:|
-	|![K-030](https://user-images.githubusercontent.com/52481037/119452719-a0b36e80-bd71-11eb-909b-121945209903.jpg)|![K-031](https://user-images.githubusercontent.com/52481037/119453410-5e3e6180-bd72-11eb-925f-5735c5028b01.jpg)|![K-032](https://user-images.githubusercontent.com/52481037/119453462-6b5b5080-bd72-11eb-9c2c-8c6d85edf492.jpg)|![K-033](https://user-images.githubusercontent.com/52481037/119453546-7f9f4d80-bd72-11eb-8a16-a32886c0fdcb.jpg)|
+* model 1
 
+	<img src="https://user-images.githubusercontent.com/52481037/119465910-16720700-bd7f-11eb-85f9-c264c96b10e8.png" width="60%"/>
+
+
+## 4. emaillist02
+
+* directory
+
+	```text
+	src/main/java
+		com.douzone.emaillist.controller
+					| --- EmaillistController
+		com.douzone.emaillist.dao
+					| --- EmaillistDao
+		com.douzone.emaillist.vo
+					| --- EmaillistVo
+	
+	webapp
+					| --- WEB-INF
+									| --- web.xml
+									| --- views
+													| --- index.jsp
+													| --- form.jsp
+	```
+
+* model 2
+
+	<img src="https://user-images.githubusercontent.com/52481037/119599613-56d59180-be20-11eb-9f15-f0d94b319f04.jpg" width="60%"/>
+
+
+## 5. guestbook02
+
+* directory
+
+	```text
+	src/main/java
+		com.douzone.guestlist.controller
+					| --- GuestlistController
+		com.douzone.guestlist.dao
+					| --- GuestlistDao
+		com.douzone.guestlist.vo
+					| --- GuestlistVo
+	
+	webapp
+					| --- WEB-INF
+									| --- web.xml
+									| --- views
+													| --- index.jsp
+													| --- deleteform.jsp
+	```
+
+* model 2
+
+	<img src="https://user-images.githubusercontent.com/52481037/119599517-1d048b00-be20-11eb-9e9b-7c9c99dccb2f.jpg" width="60%"/>
