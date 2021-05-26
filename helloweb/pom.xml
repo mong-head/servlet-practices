@@ -7,4 +7,7 @@
   </parent>
   <artifactId>helloweb</artifactId>
   <packaging>war</packaging>
+  <build>
+  	<finalName>helloweb01</finalName>
+  </build>
 </project>
