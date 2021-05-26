@@ -17,7 +17,7 @@
 				<url>http://192.168.254.40:8080/manager/text</url>
 				<path>/helloweb</path>
 				<username>admin</username>
-				<password>admin</password>
+				<password>manager</password>
 			</configuration>
 		</plugin>			
    </plugins>

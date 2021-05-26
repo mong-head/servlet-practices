@@ -28,7 +28,7 @@
 				<url>http://192.168.254.40:8080/manager/text</url>
 				<path>/emaillist02</path>
 				<username>admin</username>
-				<password>admin</password>
+				<password>manager</password>
 			</configuration>
 		</plugin>			
    </plugins>
