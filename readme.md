@@ -16,7 +16,7 @@
 
 |emaillist|guestbook|
 |:---:|:---:|
-|<img src="https://user-images.githubusercontent.com/52481037/119463795-0fe29000-bd7d-11eb-8ca2-23b385ffe1f1.jpg" width="100%">|![K-037](https://user-images.githubusercontent.com/52481037/119466534-ab750000-bd7f-11eb-8965-9971940317a6.jpg)|
+|<img src="https://user-images.githubusercontent.com/52481037/119463795-0fe29000-bd7d-11eb-8ca2-23b385ffe1f1.jpg" width="50%">|<img src="https://user-images.githubusercontent.com/52481037/119466534-ab750000-bd7f-11eb-8965-9971940317a6.jpg" width="50%"/>|
 
 ### 0-2. result
 
@@ -126,16 +126,16 @@
 	```text
 	src/main/java
 		com.douzone.emaillist.dao
-					| --- EmaillistDao
+			| --- EmaillistDao
 		com.douzone.emaillist.vo
-					| --- EmaillistVo
+			| --- EmaillistVo
 	
 	webapp
-					| --- WEB-INF
-									| --- web.xml
-					| --- index.jsp
-					| --- form.jsp
-					| --- add.jsp
+			| --- WEB-INF
+					| --- web.xml
+			| --- index.jsp
+			| --- form.jsp
+			| --- add.jsp
 	```
 
 * model1
@@ -160,17 +160,17 @@
 	```text
 	src/main/java
 		com.douzone.guestbook.dao
-					| --- GuestbookDao
+			| --- GuestbookDao
 		com.douzone.guestbook.vo
-					| --- GuestbookVo
+			| --- GuestbookVo
 	
 	webapp
-					| --- WEB-INF
-									| --- web.xml
-					| --- index.jsp
-					| --- deleteform.jsp
-					| --- delete.jsp
-					| --- add.jsp
+			| --- WEB-INF
+					| --- web.xml
+			| --- index.jsp
+			| --- deleteform.jsp
+			| --- delete.jsp
+			| --- add.jsp
 	```
 
 * model 1
@@ -185,18 +185,18 @@
 	```text
 	src/main/java
 		com.douzone.emaillist.controller
-					| --- EmaillistController
+			| --- EmaillistController
 		com.douzone.emaillist.dao
-					| --- EmaillistDao
+			| --- EmaillistDao
 		com.douzone.emaillist.vo
-					| --- EmaillistVo
+			| --- EmaillistVo
 	
 	webapp
-					| --- WEB-INF
-									| --- web.xml
-									| --- views
-													| --- index.jsp
-													| --- form.jsp
+			| --- WEB-INF
+					| --- web.xml
+					| --- views
+							| --- index.jsp
+							| --- form.jsp
 	```
 
 * model 2
@@ -211,18 +211,18 @@
 	```text
 	src/main/java
 		com.douzone.guestlist.controller
-					| --- GuestlistController
+			| --- GuestlistController
 		com.douzone.guestlist.dao
-					| --- GuestlistDao
+			| --- GuestlistDao
 		com.douzone.guestlist.vo
-					| --- GuestlistVo
+			| --- GuestlistVo
 	
 	webapp
-					| --- WEB-INF
-									| --- web.xml
-									| --- views
-													| --- index.jsp
-													| --- deleteform.jsp
+			| --- WEB-INF
+					| --- web.xml
+					| --- views
+							| --- index.jsp
+							| --- deleteform.jsp
 	```
 
 * model 2
