@@ -8,6 +8,8 @@
 	String alert = request.getParameter("alert");
 	if("true".equals(alert)){
 		out.println("<script>alert('비번 틀림!');</script>");
+		String href = request.getContextPath()+"/gb";
+		//out.println("<script>window.location.href=\"http://localhost:8080/guestbook02/gb\"</script>");
 	}
 %>
 <html>
