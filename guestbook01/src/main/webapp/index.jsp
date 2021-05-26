@@ -1,6 +1,6 @@
-<%@page import="com.douzone.guestbook01.vo.GuestbookVo"%>
+<%@page import="com.douzone.guestbook.vo.GuestbookVo"%>
 <%@page import="java.util.List"%>
-<%@page import="com.douzone.guestbook01.dao.GuestbookDao"%>
+<%@page import="com.douzone.guestbook.dao.GuestbookDao"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%

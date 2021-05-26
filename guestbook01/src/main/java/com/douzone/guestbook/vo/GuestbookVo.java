@@ -1,4 +1,4 @@
-package com.douzone.guestbook01.vo;
+package com.douzone.guestbook.vo;
 
 public class GuestbookVo {
 	private long no;

@@ -1,4 +1,4 @@
-package com.douzone.guestbook01.dao;
+package com.douzone.guestbook.dao;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -8,7 +8,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.douzone.guestbook01.vo.GuestbookVo;
+import com.douzone.guestbook.vo.GuestbookVo;
 
 public class GuestbookDao {
 	private Connection getConnection() throws SQLException {
