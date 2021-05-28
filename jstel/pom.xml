@@ -29,7 +29,7 @@
   
   <!-- 배포용 -->
   <build>
-  	<finalName>jstel</finalName>
+  	<finalName>jstlel</finalName>
   	<plugins>
   		<plugin>
 			<groupId>org.codehaus.mojo</groupId>
