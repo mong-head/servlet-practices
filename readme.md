@@ -117,6 +117,13 @@
 				<h1>hello? <%=name %></h1>
 			</body>
 			```
+			
+### 1-4. CookieServlet
+
+* visitCount 알아봄
+	* 브라우저에 몇 번 방문한 것인지 세는 변수
+	* 브라우저 끄기 전까지 계속 cookie update
+
 ## 2. emaillist01
 
 * pom에 mariadb driver 넣기
@@ -228,3 +235,33 @@
 * model 2
 
 	<img src="https://user-images.githubusercontent.com/52481037/119599517-1d048b00-be20-11eb-9e9b-7c9c99dccb2f.jpg" width="60%"/>
+	
+	
+## 6. jstel
+
+* jsp에서 java code 없애기 연습
+
+* <%= %> -> EL
+	
+	* 01.jsp
+	* 02.jsp
+
+* <% %> -> JSTL
+
+```jsp
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>  
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+``
+	* color2.jsp : JSTL 사용 O
+	
+		* 
+		* color.jsp : JSTL 사용 X
+		
+	* 03.jsp
+	
+	* table2.jsp : forEach, set
+	
+	* 01.jsp
+		* 
