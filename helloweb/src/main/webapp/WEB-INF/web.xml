@@ -29,4 +29,14 @@
     <servlet-name>CookieServlet</servlet-name>
     <url-pattern>/visit</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>LifeCircleServlet</display-name>
+    <servlet-name>LifeCircleServlet</servlet-name>
+    <servlet-class>com.douzone.helloweb.controller.LifeCircleServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LifeCircleServlet</servlet-name>
+    <url-pattern>/lc</url-pattern>
+  </servlet-mapping>
 </web-app>

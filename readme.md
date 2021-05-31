@@ -123,6 +123,28 @@
 * visitCount 알아봄
 	* 브라우저에 몇 번 방문한 것인지 세는 변수
 	* 브라우저 끄기 전까지 계속 cookie update
+	
+### 1-5. LifeCircleServlet
+
+* servlet의 생명주기 test
+
+	* init() -> service() -> doGet()   -> destroy()
+						  -> doPost()
+
+* LifeCircleServlet 처음 생성 -> init -> service -> doGet
+
+* 2번 째 호출 : service -> doget
+
+* 결과
+	```text
+	//1번째 호출
+	LifeCircleServlet.init(...) called
+	LifeCircleServlet.service(...) called
+	LifeCircleServlet.doGet(...) called
+	//2번째 호출
+	LifeCircleServlet.service(...) called
+	LifeCircleServlet.doGet(...) called
+	```
 
 ## 2. emaillist01
 
