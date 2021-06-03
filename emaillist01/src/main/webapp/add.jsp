@@ -3,7 +3,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%
-	//요청 받음
+//요청 받음
 	request.setCharacterEncoding("utf-8"); //한글로 나오도록!
 	String firstName = request.getParameter("fn");
 	String lastName = request.getParameter("ln");
